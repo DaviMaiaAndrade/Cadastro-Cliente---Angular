@@ -1,0 +1,126 @@
+<div fxLayout="row" fxLayoutAlign="center" class="home-container">
+    <div fxLayout="column" fxFlex="1000px" class="content-area">
+
+        <!-- Card de Boas-vindas -->
+        <mat-card class="welcome-card">
+            <mat-card-content class="welcome-content">
+                <div class="hero-section">
+                    <mat-icon class="hero-icon">people_alt</mat-icon>
+                    <h1 class="hero-title">Bem-vindo ao Sistema de Cadastro de Clientes</h1>
+                    <p class="hero-subtitle">Gerencie seus clientes de forma simples, rápida e eficiente</p>
+                </div>
+
+                <div class="features-grid" fxLayout="row wrap" fxLayoutGap="24px" fxLayoutAlign="center">
+
+                    <div fxFlex="0 1 calc(33.33% - 24px)" fxFlex.lt-md="0 1 calc(50% - 24px)" fxFlex.lt-sm="100" class="feature-card">
+                        <div class="feature-icon-wrapper primary">
+                            <mat-icon class="feature-icon">person_add</mat-icon>
+                        </div>
+                        <h3 class="feature-title">Cadastro Rápido</h3>
+                        <p class="feature-description">
+                            Registre novos clientes com formulários intuitivos e validação em tempo real
+                        </p>
+                        <button mat-raised-button color="primary" routerLink="/cadastro" class="feature-button">
+                            <mat-icon>feed</mat-icon>
+                            Cadastrar Cliente
+                        </button>
+                    </div>
+
+                    <div fxFlex="0 1 calc(33.33% - 24px)" fxFlex.lt-md="0 1 calc(50% - 24px)" fxFlex.lt-sm="100" class="feature-card">
+                        <div class="feature-icon-wrapper accent">
+                            <mat-icon class="feature-icon">search</mat-icon>
+                        </div>
+                        <h3 class="feature-title">Consulta Eficiente</h3>
+                        <p class="feature-description">
+                            Encontre e edite informações de clientes de forma rápida e prática
+                        </p>
+                        <button mat-raised-button color="primary" routerLink="/consulta" class="feature-button">
+                            <mat-icon>search</mat-icon>
+                            Consultar Clientes
+                        </button>
+                    </div>
+
+                    <div fxFlex="0 1 calc(33.33% - 24px)" fxFlex.lt-md="0 1 calc(50% - 24px)" fxFlex.lt-sm="100" class="feature-card">
+                        <div class="feature-icon-wrapper success">
+                            <mat-icon class="feature-icon">edit</mat-icon>
+                        </div>
+                        <h3 class="feature-title">Edição Simples</h3>
+                        <p class="feature-description">
+                            Atualize dados de clientes com interface amigável e responsiva
+                        </p>
+                        <button mat-raised-button color="primary" routerLink="/consulta" class="feature-button">
+                            <mat-icon>edit</mat-icon>
+                            Gerenciar
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="stats-section" fxLayout="row wrap" fxLayoutGap="16px" fxLayoutAlign="center">
+                    <div class="stat-card" fxFlex="0 1 calc(33.33% - 16px)" fxFlex.lt-md="0 1 calc(50% - 16px)" fxFlex.lt-sm="100">
+                        <mat-icon class="stat-icon">speed</mat-icon>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Rápido</div>
+                    </div>
+
+                    <div class="stat-card" fxFlex="0 1 calc(33.33% - 16px)" fxFlex.lt-md="0 1 calc(50% - 16px)" fxFlex.lt-sm="100">
+                        <mat-icon class="stat-icon">security</mat-icon>
+                        <div class="stat-number">Seguro</div>
+                        <div class="stat-label">Dados Protegidos</div>
+                    </div>
+
+                    <div class="stat-card" fxFlex="0 1 calc(33.33% - 16px)" fxFlex.lt-md="0 1 calc(50% - 16px)" fxFlex.lt-sm="100">
+                        <mat-icon class="stat-icon">devices</mat-icon>
+                        <div class="stat-number">Multi</div>
+                        <div class="stat-label">Plataforma</div>
+                    </div>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Card de Início Rápido -->
+        <mat-card class="quick-start-card">
+            <mat-card-header class="quick-start-header">
+                <mat-icon class="header-icon">rocket_launch</mat-icon>
+                <mat-card-title>Início Rápido</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="quick-start-content">
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Cadastre seus clientes</h4>
+                            <p>Acesse o formulário e preencha os dados básicos</p>
+                        </div>
+                    </div>
+
+                    <div class="step-arrow">
+                        <mat-icon>arrow_forward</mat-icon>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Organize as informações</h4>
+                            <p>Todos os dados ficam salvos e organizados</p>
+                        </div>
+                    </div>
+
+                    <div class="step-arrow">
+                        <mat-icon>arrow_forward</mat-icon>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Consulte quando precisar</h4>
+                            <p>Busque e edite informações facilmente</p>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+</div>
