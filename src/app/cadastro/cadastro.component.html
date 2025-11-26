@@ -42,6 +42,7 @@
                                 <input type="text"
                                        [(ngModel)]="cliente.cpf"
                                        name="cpf"
+                                       mask="000.000.000-00"
                                        placeholder="000.000.000-00"
                                        matInput />
                                 <mat-icon matPrefix>badge</mat-icon>
@@ -54,6 +55,7 @@
                                 <input type="text"
                                        [(ngModel)]="cliente.dataNascimento"
                                        name="dataNascimento"
+                                       mask="00/00/0000"
                                        placeholder="DD/MM/AAAA"
                                        matInput />
                                 <mat-icon matPrefix>calendar_today</mat-icon>
@@ -63,15 +65,19 @@
 
                 </mat-card-content>
                 <mat-card-actions class="card-actions">
-                    <button mat-raised-button color="primary" type="submit" class="action-button">
-                        <mat-icon>save</mat-icon>
-                        <span>Salvar</span>
-                    </button>
-                    <button mat-raised-button color="primary" class="action-button">
-                        <mat-icon>refresh</mat-icon>
-                        <span>Atualizar</span>
-                    </button>
-                    <button mat-raised-button color="accent" class="action-button">
+                    @if(!atualizando){
+                        <button mat-raised-button color="primary" type="submit" class="action-button">
+                            <mat-icon>save</mat-icon>
+                            <span>Salvar</span>
+                        </button>
+                    } @else {
+                        <button mat-raised-button color="primary" type="submit" class="action-button">
+                            <mat-icon>refresh</mat-icon>
+                            <span>Atualizar</span>
+                        </button>
+                    }
+
+                    <button mat-raised-button color="accent" type="button" (click)="limpar()" class="action-button">
                         <mat-icon>backspace</mat-icon>
                         <span>Limpar</span>
                     </button>

@@ -92,6 +92,33 @@
                                         <mat-icon>edit</mat-icon>
                                         <span>Editar</span>
                                     </button>
+
+                                    @if(!cliente.deletando){
+                                        <button type="button"
+                                                mat-raised-button
+                                                color="warn"
+                                                class="delete-button"
+                                                (click)="preparaDeletar(cliente)">
+                                            <mat-icon>delete</mat-icon>
+                                            <span>Deletar</span>
+                                        </button>
+                                    } @else {
+                                        <button type="button"
+                                                mat-raised-button
+                                                color="accent"
+                                                class="confirm-button"
+                                                (click)="deletar(cliente)">
+                                            <mat-icon>check_circle</mat-icon>
+                                            <span>Confirmar</span>
+                                        </button>
+                                        <button type="button"
+                                                mat-button
+                                                class="cancel-button"
+                                                (click)="cancelarDeletar(cliente)">
+                                            <mat-icon>cancel</mat-icon>
+                                            <span>Cancelar</span>
+                                        </button>
+                                    }
                                 </td>
                             </ng-container>
 
